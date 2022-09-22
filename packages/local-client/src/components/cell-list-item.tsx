@@ -4,7 +4,6 @@ import CodeCell from "./code-cell";
 import TextEditor from "./text-editor";
 import ActionBar from "./ActionBar";
 import "./cell-list-item.css"
-import AddCell from "./AddCell";
 
 
 interface CellListItemProps {

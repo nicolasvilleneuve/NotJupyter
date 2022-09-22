@@ -2,7 +2,6 @@ import "./code-cell.css";
 import React, {useEffect} from 'react';
 import CodeEditor from "./code-editor";
 import Preview from "./preview";
-import Bundler from "../bundler";
 import Resizable from "./resizable";
 import {Cell} from "../state";
 import {useActions} from "../hooks/use-actions";
@@ -35,6 +34,7 @@ const CodeCell: React.FC<CodeCellProps> = ({cell}) => {
         return () => {
             clearTimeout(timer);
         }
+        // eslint-disable-next-line
     }, [cumulativeCode, cell.id, createBundle]);
 
 
